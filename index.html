@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FluffyStudio | Fantasy Over Reality</title>
+    <title>CandyDrop | A Sweet Escape</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
     <style>
         :root {
-            --dark-bg: #0a0510;
-            --card-bg: #160d24;
-            --main-purple: #8a2be2;
-            --accent-purple: #c77dff;
-            --text-gray: #b0a8b9;
+            /* Tropical / Candy Theme Colors */
+            --dark-bg: #091921;
+            --card-bg: #132733;
+            --main-pink: #ff477e;
+            --accent-blue: #00bbf9;
+            --text-gray: #bce3db;
         }
 
         body {
@@ -27,27 +28,27 @@
 
         h1, h2, h3, .navbar-brand { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
 
-        .text-purple { color: var(--main-purple) !important; }
-        .text-accent { color: var(--accent-purple) !important; }
-        .motto { color: var(--accent-purple); font-style: italic; letter-spacing: 1px; font-weight: 600; }
+        .text-pink { color: var(--main-pink) !important; }
+        .text-accent { color: var(--accent-blue) !important; }
+        .motto { color: var(--accent-blue); font-style: italic; letter-spacing: 1px; font-weight: 600; }
         
         /* --- Navbar --- */
-        .navbar { background: rgba(10, 5, 16, 0.95); border-bottom: 1px solid #221a2b; }
-        .navbar-brand i { color: var(--main-purple); margin-right: 10px; }
+        .navbar { background: rgba(9, 25, 33, 0.95); border-bottom: 1px solid #1a3a4a; }
+        .navbar-brand i { color: var(--main-pink); margin-right: 10px; }
 
         /* --- Hero / Mascot --- */
-        .hero-section { padding: 120px 0 80px; background: radial-gradient(circle at top, #1e0b36 0%, var(--dark-bg) 70%); }
+        .hero-section { padding: 120px 0 80px; background: radial-gradient(circle at top, #113645 0%, var(--dark-bg) 70%); }
         .profile-img-container {
             width: 180px; height: 180px;
-            border: 4px solid var(--main-purple); border-radius: 50%;
+            border: 4px solid var(--main-pink); border-radius: 50%;
             overflow: hidden; background: #111;
-            box-shadow: 0 0 25px rgba(138, 43, 226, 0.5); margin: 0 auto 25px;
+            box-shadow: 0 0 25px rgba(255, 71, 126, 0.5); margin: 0 auto 25px;
         }
         .profile-img-container img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 
         /* --- Project Card --- */
-        .game-card { background: var(--card-bg); border: 1px solid #2d1b45; border-radius: 15px; transition: 0.3s; }
-        .game-card:hover { border-color: var(--accent-purple); transform: translateY(-5px); }
+        .game-card { background: var(--card-bg); border: 1px solid #1a3a4a; border-radius: 15px; transition: 0.3s; }
+        .game-card:hover { border-color: var(--accent-blue); transform: translateY(-5px); }
         .game-card .card-title { color: #ffffff !important; font-weight: 900; }
         .game-card .card-text { color: #ffffff !important; opacity: 0.9; }
 
@@ -55,31 +56,31 @@
         .project-gif-container img { width: 100%; height: auto; border-radius: 8px; object-fit: contain; }
 
         /* --- Rating Icons --- */
-        .rating-system { display: flex; gap: 20px; margin: 15px 0; padding: 10px 0; border-top: 1px solid #2d1b45; }
-        .rating-icon { font-size: 1.3rem; color: #6a5a7c; transition: 0.3s; cursor: help; }
-        .rating-icon:hover { color: var(--accent-purple); text-shadow: 0 0 10px var(--accent-purple); transform: scale(1.2); }
+        .rating-system { display: flex; gap: 20px; margin: 15px 0; padding: 10px 0; border-top: 1px solid #1a3a4a; }
+        .rating-icon { font-size: 1.3rem; color: #5c8491; transition: 0.3s; cursor: help; }
+        .rating-icon:hover { color: var(--accent-blue); text-shadow: 0 0 10px var(--accent-blue); transform: scale(1.2); }
 
         /* --- NEW Support Section Styles --- */
         .support-text-box {
-            background: var(--card-bg); /* This matches your project cards */
-            border: 1px solid #2d1b45;
+            background: var(--card-bg);
+            border: 1px solid #1a3a4a;
             border-radius: 15px;
             padding: 40px;
         }
         .benefit-card {
             background: var(--card-bg);
-            border: 1px solid #2d1b45;
+            border: 1px solid #1a3a4a;
             transition: 0.3s;
         }
         .benefit-card:hover {
-            border-color: var(--accent-purple);
+            border-color: var(--accent-blue);
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 187, 249, 0.2);
         }
         
         .platform-card {
             background: var(--card-bg);
-            border: 2px solid #2d1b45;
+            border: 2px solid #1a3a4a;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
@@ -107,23 +108,23 @@
             color: var(--text-gray); transition: 0.3s; font-size: 2.2rem;
             text-decoration: none; display: inline-block; min-width: 50px;
         }
-        .social-links a:hover { color: var(--accent-purple); transform: translateY(-5px); }
+        .social-links a:hover { color: var(--accent-blue); transform: translateY(-5px); }
 
         /* --- Footer & Disclaimer --- */
-        footer { padding: 80px 0 40px; border-top: 1px solid #221a2b; background: #050208; }
+        footer { padding: 80px 0 40px; border-top: 1px solid #1a3a4a; background: #040c10; }
         .legal-disclaimer {
             font-size: 0.85rem; color: #a0a0a0; max-width: 900px; margin: 0 auto;
-            line-height: 1.8; border: 1px solid #1a0b36; padding: 30px;
-            border-radius: 15px; background: rgba(138, 43, 226, 0.02);
+            line-height: 1.8; border: 1px solid #113645; padding: 30px;
+            border-radius: 15px; background: rgba(255, 71, 126, 0.02);
             text-align: left;
         }
 
-        .btn-purple {
-            background: var(--main-purple); color: white; border: none; font-weight: bold;
+        .btn-pink {
+            background: var(--main-pink); color: white; border: none; font-weight: bold;
             padding: 12px 30px; border-radius: 8px; transition: 0.3s;
             text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;
         }
-        .btn-purple:hover { background: var(--accent-purple); box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); color: #000; }
+        .btn-pink:hover { background: var(--accent-blue); box-shadow: 0 0 20px rgba(0, 187, 249, 0.6); color: #000; }
     </style>
 </head>
 <body>
@@ -131,8 +132,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#about">
-                <i class="fas fa-rabbit"></i> 
-                <span>FLUFFY<span class="text-accent">STUDIO</span></span>
+                <i class="fas fa-candy-cane"></i> 
+                <span>CANDY<span class="text-accent">DROP</span></span>
             </a>
             <div class="ms-auto">
                 <a href="#about" class="text-white mx-2 text-decoration-none small fw-bold">ABOUT</a>
@@ -148,16 +149,16 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="profile-img-container shadow">
-                        <img src="bunny_dance.gif" alt="Dancing Bunny Mascot">
+                        <img src="candydrop_mascot.gif" alt="CandyDrop Mascot">
                     </div>
-                    <h1 class="display-5 fw-bold mb-2">Welcome to <span class="text-purple">FluffyStudio</span></h1>
-                    <p class="motto mb-4">“Where fantasy is better than reality!”</p>
-                    <div class="text-start p-4 rounded-4 shadow-sm mb-5" style="background: rgba(255,255,255,0.03); border: 1px solid #1a0b36;">
-                        <p>FluffyStudio isn’t a big company, it’s a one-person passion project built around storytelling, creativity, and the joy of bringing characters to life.</p>
-                        <p>My current project, Out of Puberty, is at the heart of FluffyStudio. It’s a constantly evolving game where I pour my energy, imagination, and love for the medium into every update.</p>
-                        <p>At FluffyStudio, the motto is simple:
-                        “Where fantasy is better than reality!”</p>
-                        <p>That’s the spirit guiding everything I make. Whether it’s through engaging characters, striking visuals, or playful storytelling, my goal is to craft experiences that feel alive, memorable, and worth coming back to.</p>
+                    <h1 class="display-5 fw-bold mb-2">Welcome to <span class="text-pink">CandyDrop</span></h1>
+                    <p class="motto mb-4">“Your sweet escape to paradise!”</p>
+                    <div class="text-start p-4 rounded-4 shadow-sm mb-5" style="background: rgba(255,255,255,0.03); border: 1px solid #1a3a4a;">
+                        <p>CandyDrop isn’t a massive studio; it’s a solo passion project built around vibrant storytelling, sun-soaked adventures, and the joy of bringing deliciously fun characters to life.</p>
+                        <p>My current project, Spring Time Island, is the beating heart of CandyDrop. It’s an ever-expanding tropical getaway where I pour my imagination and love for the visual novel medium into every breezy update.</p>
+                        <p>At CandyDrop, the motto is simple:
+                        “Your sweet escape to paradise!”</p>
+                        <p>That tropical spirit guides everything I make. Whether it’s through engaging heroines, striking island visuals, or playful, cheeky storytelling, my goal is to craft experiences that feel like a vacation you never want to leave.</p>
                     </div>
                 </div>
             </div>
@@ -172,20 +173,20 @@
                     <div class="card game-card overflow-hidden shadow-lg">
                         <div class="row g-0 align-items-center">
                             <div class="col-md-5 project-gif-container">
-                                <a href="https://fluffystudio.itch.io/out-of-puberty-reimagined" target="_blank" class="d-block w-100">
-                                    <img src="Chapter_1.gif" alt="Out of Puberty Gameplay">
+                                <a href="https://candydrop.itch.io/spring-time-island" target="_blank" class="d-block w-100">
+                                    <img src="island_gameplay.gif" alt="Spring Time Island Gameplay">
                                 </a>
                             </div>
                             <div class="col-md-7 p-4 p-lg-5">
-                                <h3 class="card-title h1">Out of Puberty: Reimagined</h3>
+                                <h3 class="card-title h1">Spring Time Island</h3>
                                 <div class="rating-system">
-                                    <div class="rating-icon" title="Adult Themes"><i class="fas fa-handcuffs"></i></div>
-                                    <div class="rating-icon" title="Voyeurism / Sneaking"><i class="fas fa-keyhole"></i></div>
-                                    <div class="rating-icon" title="Fluffy Approved"><i class="fas fa-rabbit"></i></div>
+                                    <div class="rating-icon" title="Adult Themes"><i class="fas fa-martini-glass-citrus"></i></div>
+                                    <div class="rating-icon" title="Romance & Secrets"><i class="fas fa-heart"></i></div>
+                                    <div class="rating-icon" title="CandyDrop Approved"><i class="fas fa-sun"></i></div>
                                     <span class="ms-auto badge bg-danger d-flex align-items-center px-3" style="font-size: 0.7rem;">18+ ONLY</span>
                                 </div>
-                                <p class="card-text">Navigate the chaos of growing up as Pearl, a young woman determined to prove she's ready to move out and take on the world—despite her family's doubts. With humor, heart, and a touch of spice, this game explores the bonds of family and the thrill of forging your own path.</p>
-                                <a href="https://fluffystudio.itch.io/out-of-puberty-reimagined" target="_blank" class="btn btn-purple mt-3">
+                                <p class="card-text">Pack your bags and escape to Spring Time Island! Follow Lily as she navigates a seemingly innocent tropical paradise filled with eccentric locals, hidden secrets, and plenty of sunny romance. With humor, heart, and a whole lot of spice, this game explores the thrill of island life where every beach hides a new temptation.</p>
+                                <a href="https://candydrop.itch.io/spring-time-island" target="_blank" class="btn btn-pink mt-3">
                                     <i class="fab fa-itch-io me-2"></i> PLAY ON ITCH.IO
                                 </a>
                             </div>
@@ -198,25 +199,25 @@
 
     <section id="support" class="py-5" style="background: var(--dark-bg);">
         <div class="container">
-            <h2 class="text-center mb-5">Why Support <span class="text-purple">FluffyStudio?</span></h2>
+            <h2 class="text-center mb-5">Why Support <span class="text-pink">CandyDrop?</span></h2>
             
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-10">
                     <div class="support-text-box shadow-lg">
-                        <p class="fs-5">FluffyStudio isn’t just a name, it’s my passion, my creative outlet, and my way of sharing stories that I believe deserve to be told. I pour my time, heart, and energy into creating visual novels that aren’t just games, but experiences: worlds where players can laugh, feel, and lose themselves in fantasy.</p>
+                        <p class="fs-5">CandyDrop isn’t just a brand; it’s my creative sanctuary and my way of sharing bright, immersive stories that deserve to be told. I pour my time, heart, and energy into creating visual novels that aren’t just games, but literal escapes: tropical worlds where players can laugh, romance, and lose themselves in the sun.</p>
                         
-                        <p class="text-center my-4 fs-4 motto text-accent">“Where fantasy is better than reality.”</p>
+                        <p class="text-center my-4 fs-4 motto text-accent">“Your sweet escape to paradise.”</p>
                         
-                        <p>That’s the spirit behind everything I create. With your support, I can keep chasing that vision, not only improving what I’m already building, but also exploring new stories, new characters, and new worlds waiting to come alive.</p>
+                        <p>That’s the vision behind every scene I create. With your support, I can keep chasing that horizon, not only polishing the sandy shores of my current project but also charting new islands, new waifus, and new adventures waiting to be explored.</p>
                         
-                        <p class="fw-bold mt-4 mb-3 text-white fs-5">Supporting FluffyStudio means:</p>
+                        <p class="fw-bold mt-4 mb-3 text-white fs-5">Supporting CandyDrop means:</p>
                         <ul class="list-unstyled ms-3">
-                            <li class="mb-3 d-flex align-items-start"><i class="fas fa-heart text-purple mt-1 me-3"></i> <span>You’re helping me grow as a creator and keep this dream alive.</span></li>
-                            <li class="mb-3 d-flex align-items-start"><i class="fas fa-heart text-purple mt-1 me-3"></i> <span>You’re giving me the freedom to focus on quality, instead of cutting corners.</span></li>
-                            <li class="mb-3 d-flex align-items-start"><i class="fas fa-heart text-purple mt-1 me-3"></i> <span>You’re becoming part of a community that inspires and shapes the future of my projects.</span></li>
+                            <li class="mb-3 d-flex align-items-start"><i class="fas fa-umbrella-beach text-pink mt-1 me-3"></i> <span>You’re helping me grow as a creator and keeping this island dream afloat.</span></li>
+                            <li class="mb-3 d-flex align-items-start"><i class="fas fa-umbrella-beach text-pink mt-1 me-3"></i> <span>You’re giving me the freedom to focus on high-quality artwork instead of cutting corners.</span></li>
+                            <li class="mb-3 d-flex align-items-start"><i class="fas fa-umbrella-beach text-pink mt-1 me-3"></i> <span>You’re becoming part of a community that inspires and shapes the future of my stories.</span></li>
                         </ul>
                         
-                        <p class="mt-4 pt-3 border-top" style="border-color: #2d1b45 !important;">If you believe in immersive storytelling, in creativity without limits, and in a brand built on passion rather than profit, then your support means the world to me. Together, we can keep proving that sometimes… <span class="text-accent fst-italic">fantasy really is better than reality.</span></p>
+                        <p class="mt-4 pt-3 border-top" style="border-color: #1a3a4a !important;">If you believe in vibrant storytelling, in creativity without limits, and in a studio built on pure passion, then your support means the absolute world to me. Together, we can keep proving that sometimes… <span class="text-accent fst-italic">the island getaway is better than reality.</span></p>
                     </div>
                 </div>
             </div>
@@ -224,46 +225,46 @@
             <div class="row g-3 justify-content-center mb-5">
                 <div class="col-6 col-md-3">
                     <div class="p-3 text-center rounded-3 h-100 benefit-card shadow-sm">
-                        <i class="fas fa-star fa-2x text-accent mb-2"></i>
-                        <h6 class="fw-bold mb-0">Early Access</h6>
+                        <i class="fas fa-ticket-alt fa-2x text-accent mb-2"></i>
+                        <h6 class="fw-bold mb-0">First Class Access</h6>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 text-center rounded-3 h-100 benefit-card shadow-sm">
                         <i class="fas fa-image fa-2x text-accent mb-2"></i>
-                        <h6 class="fw-bold mb-0">Exclusive Previews</h6>
+                        <h6 class="fw-bold mb-0">Exclusive Art</h6>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 text-center rounded-3 h-100 benefit-card shadow-sm">
                         <i class="fas fa-poll fa-2x text-accent mb-2"></i>
-                        <h6 class="fw-bold mb-0">Community Polls</h6>
+                        <h6 class="fw-bold mb-0">Island Polls</h6>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 text-center rounded-3 h-100 benefit-card shadow-sm">
-                        <i class="fas fa-handshake fa-2x text-accent mb-2"></i>
-                        <h6 class="fw-bold mb-0">Direct Feedback</h6>
+                        <i class="fas fa-compass fa-2x text-accent mb-2"></i>
+                        <h6 class="fw-bold mb-0">Direct Input</h6>
                     </div>
                 </div>
             </div>
 
             <div class="row justify-content-center g-4">
                 <div class="col-md-5">
-                    <a href="https://www.patreon.com/c/fluffystudio" target="_blank" class="text-decoration-none">
+                    <a href="https://www.patreon.com/" target="_blank" class="text-decoration-none">
                         <div class="platform-card patreon-card p-4 rounded-4 text-center h-100 shadow-lg">
                             <i class="fab fa-patreon fa-4x mb-3"></i>
                             <h4 class="fw-bold text-white mb-2">Patreon</h4>
-                            <p class="text-light opacity-75 small mb-0">Join the official inner circle.</p>
+                            <p class="text-light opacity-75 small mb-0">Join the VIP beach club.</p>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-5">
-                    <a href="https://subscribestar.adult/fluffysan_sensei" target="_blank" class="text-decoration-none">
+                    <a href="https://subscribestar.adult/" target="_blank" class="text-decoration-none">
                         <div class="platform-card subscribestar-card p-4 rounded-4 text-center h-100 shadow-lg">
                             <i class="fas fa-star fa-4x mb-3"></i>
                             <h4 class="fw-bold text-white mb-2">SubscribeStar</h4>
-                            <p class="text-light opacity-75 small mb-0">Alternative platform, same perks.</p>
+                            <p class="text-light opacity-75 small mb-0">Alternative platform, same tropical perks.</p>
                         </div>
                     </a>
                 </div>
@@ -275,24 +276,24 @@
     <footer class="text-center">
         <div class="container">
             <div class="mb-5">
-                <i class="fas fa-rabbit fa-3x mb-3 text-purple"></i>
-                <h4 class="fw-bold mb-4">FLUFFY<span class="text-accent">STUDIO</span></h4>
+                <i class="fas fa-candy-cane fa-3x mb-3 text-pink"></i>
+                <h4 class="fw-bold mb-4">CANDY<span class="text-accent">DROP</span></h4>
                 
                 <div class="social-links mb-5">
-                    <a href="https://www.patreon.com/c/fluffystudio" target="_blank" title="Patreon"><i class="fab fa-patreon"></i></a>
-                    <a href="https://subscribestar.adult/fluffysan_sensei" target="_blank" title="SubscribeStar"><i class="fas fa-star"></i></a>
-                    <a href="https://www.pixiv.net/en/users/69922265" target="_blank" title="Pixiv Art Gallery"><i class="fas fa-palette"></i></a>
-                    <a href="https://www.deviantart.com/fluffyloves" target="_blank" title="DeviantArt"><i class="fab fa-deviantart"></i></a>
+                    <a href="https://www.patreon.com/" target="_blank" title="Patreon"><i class="fab fa-patreon"></i></a>
+                    <a href="https://subscribestar.adult/" target="_blank" title="SubscribeStar"><i class="fas fa-star"></i></a>
+                    <a href="https://www.pixiv.net/" target="_blank" title="Pixiv Art Gallery"><i class="fas fa-palette"></i></a>
+                    <a href="https://www.deviantart.com/" target="_blank" title="DeviantArt"><i class="fab fa-deviantart"></i></a>
                 </div>
             </div>
 
             <div class="legal-disclaimer shadow-lg">
                 <p class="mb-0">
-                    <strong>WARNING:</strong> © 2026 FluffyStudio™ — All rights reserved, none of your kinks judged. 
+                    <strong>WARNING:</strong> © 2026 CandyDrop™ — All rights reserved, none of your island fantasies judged. 
                     <br><br>
-                    Warning: supporting this brand may cause horniness, questionable choices, and emotional attachment to my characters. Consult your browser history before proceeding. If you are experiencing longer than 4 hours of “gameplay enjoyment,” please do not contact a doctor, just keep playing. Any resemblance to your deepest fetishes is 100% intentional and proudly delivered. 
+                    Warning: supporting this brand may cause intense sugar rushes, permanent island fever, and emotional attachment to my characters. Consult your browser history before proceeding. If you are experiencing longer than 4 hours of “tropical gameplay enjoyment,” please do not contact a lifeguard, just keep playing. Any resemblance to your deepest beach resort fantasies is 100% intentional and proudly delivered. 
                     <br><br>
-                    By supporting FluffyStudio, you legally acknowledge that my character may be hotter than real people and “research purposes” is a valid excuse. Do not attempt to sue FluffyStudio, my lawyer is a very busty Slutwife and she always wins in the judges chambers.
+                    By supporting CandyDrop, you legally acknowledge that my characters may be hotter than the summer sun and “vacation research” is a valid excuse. Do not attempt to sue CandyDrop, my lawyer is a very persuasive beach babe and she always wins her cases by the pool.
                 </p>
             </div>
         </div>
